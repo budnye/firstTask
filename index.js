@@ -1,8 +1,10 @@
 const express = require('express');
 const server = express();
 
+//Const to save the projects and count requests
 const projects = [];
 let count = 0;
+
 server.use(express.json());
 
 //Middleware to count requests
